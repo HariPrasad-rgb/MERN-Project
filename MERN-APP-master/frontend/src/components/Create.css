@@ -1,0 +1,53 @@
+/* Form Container Styling */
+.form-container {
+  max-width: 500px;
+  width: 100%;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+
+/* Title Styling */
+.form-title {
+  color: #495057;
+}
+
+/* Input Field Animation */
+.input-animate {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.input-animate:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Animation */
+.btn-animate {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-animate:hover {
+  transform: translateY(-2px);
+  background-color: #0056b3;
+}
+
+/* Alert Animation */
+.alert {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

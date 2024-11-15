@@ -1,0 +1,42 @@
+/* Gradient Text Effect */
+.text-gradient {
+  background: linear-gradient(to right, #007bff, #6610f2);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: textGlow 1.5s infinite alternate;
+}
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(102, 16, 242, 1);
+  }
+}
+
+/* Social Media Icon Hover Effect */
+.icon-hover {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-hover:hover {
+  transform: scale(1.2);
+  color: #6610f2;
+}
+
+/* Section Animation */
+.section-animation {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
